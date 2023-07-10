@@ -11,7 +11,7 @@ export class DoggoController extends BaseController {
             .get('/:doggoId', this.getDoggoById)
             .post('', this.createDoggo)
             .delete('/:doggoId', this.deleteDoggo)
-            .put('/doggoId', this.updateDoggo)
+            .put('/:doggoId', this.updateDoggo)
     }
 
     async getDoggos(req, res, next) {
